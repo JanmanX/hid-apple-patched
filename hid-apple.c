@@ -1,5 +1,3 @@
-/*
- *  USB HID quirks support for Linux
  *
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
@@ -36,7 +34,7 @@
 
 #define APPLE_FLAG_FKEY		0x01
 
-static unsigned int fnmode = 1;
+static unsigned int fnmode = 2;
 module_param(fnmode, uint, 0644);
 MODULE_PARM_DESC(fnmode, "Mode of fn key on Apple keyboards (0 = disabled, "
 		"[1] = fkeyslast, 2 = fkeysfirst)");
