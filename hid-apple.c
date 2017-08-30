@@ -1,4 +1,4 @@
- *
+ /*
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
  *  Copyright (c) 2005 Michael Haboustak <mike-@cinci.rr.com> for Concept2, Inc
@@ -61,7 +61,7 @@ module_param(rightalt_as_rightctrl, uint, 0644);
 MODULE_PARM_DESC(rightalt_as_rightctrl, "Use the right Alt key as a right Ctrl key. "
 		"[0] = as-is, Mac layout. 1 = Right Alt is right Ctrl");
 
-static unsigned int ejectcd_as_delete;
+static unsigned int ejectcd_as_delete = 1;
 module_param(ejectcd_as_delete, uint, 0644);
 MODULE_PARM_DESC(ejectcd_as_delete, "Use Eject-CD key as Delete key. "
 		"([0] = disabled, 1 = enabled)");
